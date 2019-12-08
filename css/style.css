@@ -11,9 +11,9 @@ body {
     src:
 	local('Gabriela'),
 	local('Gabriela-Regular'),
-	url('fonts/gabriela.woff2') format('woff2'),
-	url('fonts/gabriela.woff') format('woff'),
-	url('fonts/gabriela.ttf') format('truetype');
+	url('../fonts/gabriela.woff2') format('woff2'),
+	url('../fonts/gabriela.woff') format('woff'),
+	url('../fonts/gabriela.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -21,12 +21,6 @@ body {
 /* изображение по центру */
 .center-img {
   	display: inline-block;
-}
-
-/* текст по центру */
-.center-txt {
-  	display: block;
-  	text-align: center;
 }
 
 /* обрамление фотокарточек */
@@ -42,7 +36,6 @@ body {
 }
 
 /* панель навигации */
-
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -59,12 +52,10 @@ body {
   	vertical-align: center;
   	text-align: center;
 	width: 10.75%;
-  	border: 1px solid #cccccc;
+  	border-bottom: 1px solid #cccccc;
   	padding-top: 10px;
 	padding-bottom: 10px;
-/*	box-sizing: border-box;
-	display: inline-block;
-*/}
+}
 
 /*подсветка пунктов меню*/
 .navbar input:hover {
@@ -86,7 +77,5 @@ body {
 
 /*подвал сайта*/
 .site-footer {
-	display: flex;
-	justify-content: space-between;
-	color: #999999;
+	text-align: center;
 }
