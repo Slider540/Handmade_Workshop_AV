@@ -18,21 +18,10 @@ body {
     font-style: normal;
 }
 
-/* изображение по центру */
-.center-img {
-  	display: inline-block;
-}
-
 /* обрамление фотокарточек */
 .around-photocard {
   	border-radius: 20px;
   	box-shadow: 0 0 15px #666666;
-}
-
-/* оформление фотокарточки */
-.photocard {
-  	width: 200px;
-  	margin: 20px auto;
 }
 
 /* панель навигации */
@@ -41,6 +30,13 @@ body {
 	justify-content: space-between;
 }
 
+/*цвет ссылок в панели навигации*/
+.navbar a {
+	color: black;
+	text-decoration: none;
+}
+
+/*оформление кнопок в панели навигации*/
 .navbar input {
   	background-color: #EBF0E4;
 	border-radius: 10px;
@@ -57,7 +53,7 @@ body {
 	padding-bottom: 10px;
 }
 
-/*подсветка пунктов меню*/
+/*подсветка кнопок в панели навигации*/
 .navbar input:hover {
 	background-color: rgba(203, 217, 212, 0.6);
 	border-radius: 10px;
@@ -69,10 +65,35 @@ body {
 	cursor: pointer;
 }
 
-/*цвет ссылок в меню*/
-.navbar a {
-	color: black;
-	text-decoration: none;
+.gallery-on-main-positioner {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/*составляющие галерея на главной странице*/
+.gallery-on-main-items {
+	display: table;
+	padding: 3em 0 3em;
+	width: 22%;
+	float: left;
+	margin-right: 4%;
+}
+
+.gallery-on-main-items:last-child {
+	margin-right: 0px;
+}
+
+/*псевдораспорка для галереи*/
+.gallery-on-main::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gallery-on-main-positioner {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*подвал сайта*/
