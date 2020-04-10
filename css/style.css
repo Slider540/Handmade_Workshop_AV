@@ -20,14 +20,31 @@ body {
 
 /* обрамление фотокарточек */
 .around-photocard {
-  	border-radius: 20px;
+  	border-radius: 10px;
   	box-shadow: 0 0 15px #666666;
 }
 
-/* панель навигации */
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+/*оформление кнопок в панели навигации*/
+.navbar-btn {
+	margin: auto;
+  	background-color: #EBF0E4;
+	border-radius: 10px;
+	font-family: 'Gabriela';
+  	font-size: 1em;
+	text-align: center;
+	width: 10.9%;
+	height: 1.2em;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+  	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /*цвет ссылок в панели навигации*/
@@ -36,61 +53,39 @@ body {
 	text-decoration: none;
 }
 
-/*оформление кнопок в панели навигации*/
-.navbar input {
-  	background-color: #EBF0E4;
-	border-radius: 10px;
-	border: none;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: 'Gabriela';
-  	font-size: 100%;
-  	vertical-align: center;
-  	text-align: center;
-	width: 10.75%;
-  	border-bottom: 1px solid #cccccc;
-  	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
 /*подсветка кнопок в панели навигации*/
-.navbar input:hover {
+.navbar-btn:hover {
 	background-color: rgba(203, 217, 212, 0.6);
 	border-radius: 10px;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 	text-shadow: 0 1px 1px white;
-	font-size: 110%;
+	font-size: 1.1em;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	cursor: pointer;
 }
 
-.gallery-on-main-positioner {
-	width: 70%;
-	margin: 0 auto;
+.gallery-on-main {
+	display: flex;
+	justify-content: space-around;
+	margin: 3em 0;
 }
 
-/*составляющие галерея на главной странице*/
-.gallery-on-main-items {
-	display: table;
-	padding: 3em 0 3em;
+.gallery-on-main-item {
 	width: 22%;
-	float: left;
-	margin-right: 4%;
 }
 
-.gallery-on-main-items:last-child {
-	margin-right: 0px;
+.gallery-on-main-item img {
+	border-radius: 10px;
+	box-shadow: 0 0 5px #666666;
 }
 
-/*псевдораспорка для галереи*/
-.gallery-on-main::after {
-	content: "";
-	display: table;
-	clear: both;
+.gallery-on-main-item img:hover {
+	box-shadow: 0 0 15px #666666;
 }
 
-.gallery-on-main-positioner {
+/*псевдораспорка*/
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
