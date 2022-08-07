@@ -20,8 +20,8 @@ body {
 
 /* обрамление фотокарточек */
 .around-photocard {
-  	border-radius: 10px;
-  	box-shadow: 0 0 15px #666666;
+  	border-radius: 15px;
+  	box-shadow: 0 0 20px #666666;
 }
 
 .navbar {
