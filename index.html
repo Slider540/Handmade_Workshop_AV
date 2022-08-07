@@ -4,54 +4,66 @@
 		<meta charset="utf-8">
 		<title>Рукодельная мастерская AV</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<meta name="description" lang="ru" content="Вязаная одежда и аксессуары в наличии и под заказ. Текстильные куклы ручной работы.">
 		<meta name="keywords" lang="ru" content="Вязаный, вязание, шапка, шапки, шарф, палантин, шарфы, кофта, кардиган, свитер, одежда, кукла, ручная, работа, заказ">
 		<meta name="robots" content="index, follow">
 	</head>
 	<body>
-		<div class="header-logo">
+
+		<header class="header-logo">
 			<img class="around-photocard" src="img/logo/banner_wide.jpg" width="100%" alt="Рукодельная мастерская AV"/>
-		</div>
-		<div class="navbar">
-			<a class="navbar-btn" href="index.html">Главная</a>
-			<a class="navbar-btn" href="#">Вязаные изделия</a>
-			<a class="navbar-btn" href="#">Куклы</a>
-			<a class="navbar-btn" href="#">Реновация</a>
-			<a class="navbar-btn" href="#">Отзывы</a>
-			<a class="navbar-btn" href="#">Контакты</a>
-			<a class="navbar-btn" href="#">Личный кабинет</a>
-			<a class="navbar-btn" href="#">Корзина</a>
-		</div>
-		<div class="gallery-on-main">
-			<div class="gallery-on-main-item">
-				<a href="img/hats/VPA_2019_01_07_0330.jpg" target="_blank">
-					<img width=100% src="img/hats/VPA_2019_01_07_0330.jpg" alt="Шапка 1"/>
+			<nav class="navbar">
+				<a class="navbar-btn" href="index.html">Главная</a>
+				<a class="navbar-btn" href="#">Вязаные изделия</a>
+				<a class="navbar-btn" href="#">Куклы</a>
+				<a class="navbar-btn" href="#">Реновация</a>
+				<a class="navbar-btn" href="#">Отзывы</a>
+				<a class="navbar-btn" href="#">Контакты</a>
+				<a class="navbar-btn" href="#">Личный кабинет</a>
+				<a class="navbar-btn" href="#">Корзина</a>
+			</nav>
+		</header>
+
+		<main>
+			<div class="gallery-on-main">
+				<div class="gallery-on-main-item">
+					<a href="img/hats/VPA_2019_01_07_0330.jpg" data-lightbox="VPA_2019_01_07_0330.jpg" data-title="Шапка 1">
+						<img src="img/hats/VPA_2019_01_07_0330.jpg" width=100% alt="Шапка 1" />
+					</a>
+					<!-- <a href="img/hats/VPA_2019_01_07_0330.jpg" target="_blank">
+						<img width=100% src="img/hats/VPA_2019_01_07_0330.jpg" alt="Шапка 1"/>
+					</a> -->
+				</div>
+				<div class="gallery-on-main-item">
+					<a href="img/hats/VPA_2019_12_22_0461.jpg" data-lightbox="VPA_2019_12_22_0461.jpg" data-title="Шапка 2">
+						<img src="img/hats/VPA_2019_12_22_0461.jpg" width=100% alt="Шапка 2" />
+					</a>
+				</div>
+				<div class="gallery-on-main-item">
+					<a href="img/hats/VPA_2019_12_22_0476.jpg" target="_blank">
+						<img width=100% src="img/hats/VPA_2019_12_22_0476.jpg" alt="Шапка 3"/>
+					</a>
+				</div>
+				<div class="gallery-on-main-item">
+					<a href="img/hats/VPA_2019_12_22_0483.jpg" target="_blank">
+						<img width=100% src="img/hats/VPA_2019_12_22_0483.jpg" alt="Шапка 4"/>
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="site-footer footer-social">
+				<a class="social-btn" href ="https://vk.com/hmws_av" target="_blank">
+					<img src="img/logo/VK_Full_Logo.png" width=8% alt="Перейти на страницу Вконтакте">
 				</a>
 			</div>
-			<div class="gallery-on-main-item">
-				<a href="img/hats/VPA_2019_12_22_0461.jpg" target="_blank">
-					<img width=100% src="img/hats/VPA_2019_12_22_0461.jpg" alt="Шапка 2"/>
-				</a>
+			<div class="site-footer footer-copyright">
+				<p>&copy;Created by RobinzonCode, 2019<br>
+				robinzonecode@yandex.ru</p>
 			</div>
-			<div class="gallery-on-main-item">
-				<a href="img/hats/VPA_2019_12_22_0476.jpg" target="_blank">
-					<img width=100% src="img/hats/VPA_2019_12_22_0476.jpg" alt="Шапка 3"/>
-				</a>
-			</div>
-			<div class="gallery-on-main-item">
-				<a href="img/hats/VPA_2019_12_22_0483.jpg" target="_blank">
-					<img width=100% src="img/hats/VPA_2019_12_22_0483.jpg" alt="Шапка 4"/>
-				</a>
-			</div>
-		</div>
-		<div class="site-footer footer-social">
-			<b>Давайте дружить!</b>
-			<a class="social-btn" href ="https://vk.com/hmws_av" target="_blank">ВКонтакте</a>
-			<a class="social-btn" href ="https://www.instagram.com/handmade_workshop_av" target="_blank">Instagram</a>
-		</div>
-		<div class="site-footer footer-copyright">
-			<p>&copy;Created by RobinzonCode, 2019</p>
-			<p>robinzonecode@yandex.ru</p>
-		</div>
+		</footer>
+		<script src="js/lightbox-plus-jquery.js"></script>
 	</body>
 </html>
